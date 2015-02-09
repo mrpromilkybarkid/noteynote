@@ -1,2 +1,12 @@
-%h1 This is the welcome page
+.nav
+	%ul
+		%li.nav-brand
+			= link_to "NoteyNote", root_path
+		%li.nav-link
+			= link_to "Login", new_user_session_path
+		%li.nav-link
+			= link_to "Register", new_user_registration_path
+
+%h1 Welcome To NoteyNote
 %hr
+%p NoteyNote Is a simple, free note-taking application built using Ruby on Rails.

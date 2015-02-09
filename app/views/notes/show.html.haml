@@ -1,7 +1,17 @@
-%h1= @note.title
-%p= @note.content
+.nav
+	%ul
+		%li.nav-brand
+			= link_to "NoteyNote", root_path
 
-= link_to "All notes", notes_path
+.note-main
+	%h1= @note.title
+	%p= simple_format(@note.content)
 
-= link_to "Edit", edit_note_path(@note)
-= link_to "Delete", note_path(@note), method: :delete, data: { confirm: "Are you sure?" }
+	.nav-edit
+		%ul
+			%li.nav-note-link
+				= link_to "All notes", notes_path
+			%li.nav-note-link
+				= link_to "Edit", edit_note_path(@note)
+			%li.nav-note-link
+				= link_to "Delete", note_path(@note), method: :delete, data: { confirm: "Are you sure?" }

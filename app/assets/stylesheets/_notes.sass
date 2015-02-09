@@ -1,0 +1,72 @@
+@import juice
+
+.nav-edit
+	margin-top: 10px
+	padding: 10px
+
+	ul
+		list-style-type: none
+		margin: 0
+		padding: 0
+		overflow: hidden
+
+		.nav-note-link
+			float: right
+
+			a
+				display: inline-block
+				width: 100px
+				padding: 10px
+				text-align: center
+				text-decoration: none
+				color: black
+				transition: all .1s ease-in
+
+				&:hover
+					background-color: #469ded
+					transition: all .1s ease-in
+					color: white
+
+.note
+	+center-block
+	+border-top-radius(30px)
+	background-color: #469ded
+	padding: 10px
+	margin-bottom: 20px
+	color: white
+	width: 90%
+	text-align: center
+	font-size: 10px
+	transition: all .1s ease-in
+
+	&:hover
+		background-color: #1363a4
+		font-size: 15px
+		transition: all .3s ease-in
+
+
+input[type="text"]
+	display: block
+	padding: 5px
+	margin-bottom: 10px
+
+textarea
+	display: block
+	padding: 5px
+	margin-bottom: 10px
+	width: 500px
+	height: 400px
+
+.note-main
+	background-color: #f1f1f1
+	padding: 20px
+
+	p
+		line-height: 150%
+
+	a
+		color: black
+		text-decoration: none
+
+		&:hover
+			text-decoration: underline

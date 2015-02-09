@@ -1,0 +1,43 @@
+@import juice
+
+.nav
+	margin-top: 10px
+	padding: 10px
+	background-color: #469ded
+	+border-top-radius(20px)
+	margin-bottom: 20px
+
+	ul
+		list-style-type: none
+		margin: 0
+		padding: 0
+		overflow: hidden
+
+	.nav-brand
+		float: left
+
+		a
+			display: inline-block
+			width: 100px
+			padding: 10px
+			text-align: center
+			text-decoration: none
+			color: white
+
+
+	.nav-link
+		float: right
+
+		a
+			display: inline-block
+			width: 100px
+			padding: 10px
+			margin-bottom: -25px
+			text-align: center
+			text-decoration: none
+			color: white
+			transition: all .1s ease-in
+
+			&:hover
+				background-color: #1363a4
+				transition: all .1s ease-in

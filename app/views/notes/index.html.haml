@@ -1,7 +1,17 @@
-%h1 Notes
-= link_to "new Note", new_note_path
-%hr/
-- @notes.each do |note|
-	%h2= link_to note.title, note
-	%p= time_ago_in_words(note.created_at)
+.nav
+	%ul
+		%li.nav-brand
+			= link_to "NoteyNote", root_path
+		%li.nav-link
+			= link_to "Sign Out", destroy_user_session_path, :method => :delete
+		%li.nav-link
+			= link_to "New Note", new_note_path
 
+- unless @notes.blank?
+	- @notes.each do |note|
+		%a{:href => url_for(note), :class => 'note-block'}
+			.note
+				%h1.title= note.title
+				%p.date= "Created #{time_ago_in_words(note.created_at)} ago"
+- else
+	%p No Notes
