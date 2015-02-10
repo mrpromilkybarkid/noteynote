@@ -315,6 +315,12 @@ textarea {
     .note-main a:hover {
       text-decoration: underline; }
 
+.no-notes h1 {
+  padding: 5px 15px;
+  font-size: 50px; }
+.no-notes p {
+  padding: 5px 15px; }
+
 input[type="email"] {
   display: block;
   padding: 5px;
