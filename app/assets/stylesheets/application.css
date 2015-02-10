@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:300);
+@import url(http://fonts.googleapis.com/css?family=Ubuntu);
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -151,7 +151,7 @@ td, th {
   padding: 0; }
 
 body {
-  font-family: "tahoma";
+  font-family: "Ubuntu", sans-serif;
   padding-left: 20px;
   padding-right: 20px; }
   body a {
@@ -163,14 +163,15 @@ body {
   body .container {
     padding-left: 10px;
     padding-right: 10px; }
-    body .container .footer {
-      margin-top: 20px;
-      padding: 10px;
-      text-align: center;
-      background-color: #469ded;
-      color: white;
-      border-bottom-right-radius: 20px;
-      border-bottom-left-radius: 20px; }
+  body .footer {
+    margin-top: 35px;
+    margin-bottom: 5px;
+    padding: 10px;
+    text-align: center;
+    background-color: #469ded;
+    color: white;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px; }
 
 * {
   margin: 0; }
@@ -182,7 +183,7 @@ html, body {
   min-height: 100%;
   height: auto !important;
   height: 100%;
-  margin: 0 auto -60px; }
+  margin: 0 auto -115px; }
 
 .footer {
   height: 40px; }
@@ -223,8 +224,18 @@ html, body {
       color: white;
       transition: all 0.1s ease-in; }
       .nav .nav-link a:hover {
+        border-top-right-radius: 15px;
+        border-top-left-radius: 15px;
         background-color: #1363a4;
         transition: all 0.1s ease-in; }
+
+.welcome-content {
+  padding: 5px 15px; }
+  .welcome-content h1 {
+    font-size: 50px;
+    padding: 25px; }
+  .welcome-content p {
+    padding: 25px; }
 
 .nav-edit {
   margin-top: 10px;
@@ -265,23 +276,36 @@ html, body {
   transition: all 0.1s ease-in; }
   .note:hover {
     background-color: #1363a4;
-    font-size: 15px;
+    font-size: 12px;
     transition: all 0.3s ease-in; }
 
 input[type="text"] {
   display: block;
-  padding: 5px;
-  margin-bottom: 10px; }
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 0;
+  box-shadow: none;
+  border: 1px solid #000;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  margin-top: 5px;
+  outline: none; }
 
 textarea {
   display: block;
-  padding: 5px;
+  padding: 10px;
+  margin-top: 5px;
   margin-bottom: 10px;
   width: 500px;
-  height: 400px; }
+  height: 200px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  border: 0;
+  border: 1px solid #000;
+  outline: none;
+  overflow: none; }
 
 .note-main {
-  background-color: #f1f1f1;
   padding: 20px; }
   .note-main p {
     line-height: 150%; }

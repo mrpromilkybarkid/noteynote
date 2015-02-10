@@ -41,24 +41,35 @@
 
 	&:hover
 		background-color: #1363a4
-		font-size: 15px
+		font-size: 12px
 		transition: all .3s ease-in
 
 
 input[type="text"]
 	display: block
-	padding: 5px
+	padding: 10px
 	margin-bottom: 10px
+	border: 0
+	box-shadow: none
+	border: 1px solid #000
+	+border-top-radius(5px)
+	margin-top: 5px
+	outline: none
 
 textarea
 	display: block
-	padding: 5px
+	padding: 10px
+	margin-top: 5px
 	margin-bottom: 10px
 	width: 500px
-	height: 400px
+	height: 200px
+	+border-top-radius(10px)
+	border: 0
+	border: 1px solid #000
+	outline: none
+	overflow: none
 
 .note-main
-	background-color: #f1f1f1
 	padding: 20px
 
 	p

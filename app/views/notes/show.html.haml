@@ -6,7 +6,8 @@
 .note-main
 	%h1= @note.title
 	%p= simple_format(@note.content)
-
+	%br/
+	%hr/
 	.nav-edit
 		%ul
 			%li.nav-note-link
@@ -14,4 +15,4 @@
 			%li.nav-note-link
 				= link_to "Edit", edit_note_path(@note)
 			%li.nav-note-link
-				= link_to "Delete", note_path(@note), method: :delete, data: { confirm: "Are you sure?" }
+				= link_to "Delete", note_path(@note), method: :delete
